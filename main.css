@@ -59,6 +59,54 @@ p {
 Navbar
 ==========
 */
+.home {
+  background: var(--mainBlack);
+  min-height: 100vh;
+}
+.main-navbar {
+  background: var(--mainBlack);
+  padding: 0rem 2rem;
+}
+
+.main-navbar li {
+  list-style: none;
+}
+
+.main-navbar a {
+  text-transform: capitalize;
+  display: block;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  color: var(--mainWhite);
+  transition: var(--transition);
+  letter-spacing: var(--spacing);
+}
+
+.main-navbar a:hover {
+  color: var(--primaryColor);
+}
+
+@media screen and (min-width: 992px) {
+  .main-navbar {
+    background: transparent;
+    padding-top: 2rem;
+  }
+  .main-navbar ul {
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin: 0 auto;
+  }
+  .main-navbar a {
+    text-align: center;
+  }
+
+  .home {
+    min-height: 100vh;
+    background: url(./images/nebula.jpg) center/cover fixed no-repeat;
+  }
+}
 
 /* 
 ==========
