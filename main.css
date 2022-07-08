@@ -14,6 +14,7 @@ Global Styles
   --gray: #93919e;
   --transition: all 300ms linear;
   --spacing: 3.2px;
+  --fontFamily: "Fira Code", monospace;
 }
 
 * {
@@ -24,8 +25,8 @@ Global Styles
 body {
   font-family: "Fira Code", monospace;
   line-height: 1.5;
-  background-color: var(--mainWhite);
-  color: var(--mainBlack);
+  background-color: var(--mainBlack);
+  color: var(--mainWhite);
 }
 a {
   text-decoration: none;
@@ -52,6 +53,23 @@ p {
   font-weight: 300;
   line-height: 2;
   font-size: 0.8rem;
+}
+
+.btn {
+  display: inline-block;
+  text-transform: capitalize;
+  font-family: --;
+  padding: 0.5rem 1rem;
+  margin: 2rem;
+  letter-spacing: var(--spacing);
+  background: var(--mainWhite);
+  color: var(--primaryColor);
+  border: 3px solid var(--primaryColor);
+  transition: var(--transition);
+}
+.btn:hover {
+  background: var(--primaryColor);
+  color: var(--mainWhite);
 }
 
 /* 
@@ -113,6 +131,28 @@ Navbar
 Hero
 ==========
 */
+
+.hero-header {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: var(--mainBlack);
+  color: var(--mainWhite);
+}
+
+.hero-banner p {
+  width: 90%;
+  max-width: 30em;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 762px) {
+  .hero-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(./images/sun.jpeg) center/cover fixed no-repeat;
+  }
+}
 
 /* 
 ==========
