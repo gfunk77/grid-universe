@@ -160,6 +160,54 @@ Cards
 ==========
 */
 
+.cards {
+  padding: 4rem 0;
+}
+.title {
+  text-align: center;
+}
+.cards-center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 2rem auto;
+}
+.card {
+  border: 2px solid var(--gray);
+  margin-bottom: 3rem;
+}
+.card-info {
+  padding: 1rem;
+}
+.card-info h3 {
+  text-align: center;
+  letter-spacing: var(--spacing);
+}
+.card-info p {
+  max-width: 800px;
+  letter-spacing: var(--spacing);
+}
+.card-footer {
+  background: var(--gray);
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+.card-footer span {
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+}
+.cards-center {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+}
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
 /* 
 ==========
 Tiles
